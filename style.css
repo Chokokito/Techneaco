@@ -323,3 +323,142 @@ Fábrica
   font-size: 0.3rem;
   text-align: center;
 }
+
+.main-fabrica {
+  padding-bottom: 5%;
+  border-bottom: 1px solid #973c2c;
+}
+/* 
+Nossas obras
+  */
+
+#obras {
+  font-family: Michroma;
+  font-size: 0.5rem;
+
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.section-obras {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 20px;
+
+  margin-bottom: 5%;
+}
+
+.section-obras img {
+  padding: 3%;
+  width: 150px;
+}
+
+.section-obras img:hover {
+  filter: brightness(50%);
+  cursor: pointer;
+}
+.section-obras img:active {
+  filter: brightness(70%);
+}
+
+#customers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 20px;
+
+  margin-bottom: 5%;
+  font-family: Michroma;
+  text-align: center;
+
+  font-size: 0.5rem;
+}
+
+.customers-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 20px;
+}
+
+.customers-row img {
+  width: 70px;
+  padding: 2%;
+}
+
+.head-location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url(assets/loc-bg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  font-family: Michroma;
+  color: white;
+
+  width: 100vw;
+  height: 100px;
+}
+
+.main-location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  gap: 20px;
+
+  padding-left: 10%;
+  padding-right: 10%;
+
+  padding: 3%;
+  font-family: Michroma;
+}
+
+.projetos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 20px;
+
+  margin-bottom: 5%;
+  width: 80vw;
+}
+
+.info-projetos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  width: 130px !important;
+  padding: 5%;
+
+  gap: 3px;
+
+  margin-bottom: 5%;
+  width: 80vw;
+
+  font-size: 0.3rem;
+  text-align: center;
+
+  border: 1px solid #973c2c;
+}
+
+.info-projetos img {
+  width: 20px;
+  padding: 3%;
+}
+
+.info-projetos h2 {
+  font-size: 0.5rem;
+  color: #973c2c;
+}
