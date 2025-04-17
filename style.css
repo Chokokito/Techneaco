@@ -17,6 +17,7 @@ body {
   line-height: 1.5;
   /* 4. Improve text rendering */
   -webkit-font-smoothing: antialiased;
+  font-size: 1.2rem; /* Increase base font size */
 }
 
 /* 5. Improve media defaults */
@@ -75,12 +76,12 @@ h6 {
 
 #head {
   width: 100vw;
-  max-height: 40px;
-  padding: 5px;
+  max-height: 60px; /* Increase header height */
+  padding: 10px; /* Add more padding */
 
   background-color: white;
 
-  gap: 5px;
+  gap: 20px;
 
   font-family: "Rethink Sans";
 
@@ -97,27 +98,27 @@ h6 {
   overflow: hidden;
 }
 .logo img {
-  width: 70px;
+  width: 170px; /* Increase logo size */
 }
 
 .menu {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 4px;
+  gap: 6px;
   flex-wrap: nowrap;
 }
 
 .menu ul {
   padding: 0px;
   display: flex;
-  gap: 10px;
+  gap: 70px;
   text-decoration: none;
   list-style-type: none;
 }
 
 .menu ul li {
-  font-size: 0.4rem;
+  font-size: 1rem; /* Increase menu font size */
   text-wrap: nowrap;
 }
 
@@ -152,11 +153,11 @@ h6 {
 
 .number p {
   text-wrap: nowrap;
-  font-size: 0.4rem;
+  font-size: 1rem; /* Increase contact number font size */
 }
 
 .number img {
-  width: 15px;
+  width: 25px; /* Increase WhatsApp icon size */
 }
 
 /* 
@@ -165,9 +166,9 @@ Hero
 
 #hero {
   width: 100vw;
-  height: 120vh;
+  height: 140vh; /* Increase hero section height */
   display: flex;
-  padding: 5%;
+  padding: 8%; /* Add more padding */
 
   font-family: "Michroma";
 
@@ -183,7 +184,11 @@ Hero
 }
 
 #hero p {
-  font-size: 0.4rem;
+  font-size: 1rem; /* Increase hero subtitle font size */
+}
+
+#hero h1 {
+  font-size: 2.5rem; /* Increase hero title font size */
 }
 
 #hero .descubra {
@@ -205,7 +210,7 @@ Hero
 }
 
 #hero .descubra p {
-  font-size: 0.5rem;
+  font-size: 1.2rem; /* Increase "Descubra" text size */
 }
 
 /* Sobre nós*/
@@ -226,27 +231,27 @@ Hero
   display: flex;
   align-items: center;
   width: 100vw;
-  gap: 10px;
+  gap: 5px;
 }
 
 .quem-somos h2,
 .solucoes h2 {
-  font-size: 1rem;
+  font-size: 1.5rem; /* Increase section titles */
 }
 
 .quem-somos p,
 .solucoes p {
-  font-size: 0.5rem;
+  font-size: 1rem; /* Increase paragraph text size */
 }
 
 .img-about,
 .img-solucoes {
-  width: 200px;
+  width: 500px; /* Increase image sizes */
 }
 
 .img-about img,
 .img-solucoes img {
-  width: 200px;
+  width: 500px; /* Increase image sizes */
 }
 
 .solucoes {
@@ -258,7 +263,7 @@ Hero
 
 .text-about,
 .text-solucoes {
-  width: 160px;
+  width: 560px;
 }
 
 .quem-somos,
@@ -286,7 +291,7 @@ Fábrica
   align-items: center;
   color: white;
 
-  font-size: 0.6rem;
+  font-size: 1.2rem; /* Increase factory section title size */
   padding-left: 10px;
   font-weight: 100;
 }
@@ -309,7 +314,7 @@ Fábrica
   justify-content: center;
 
   gap: 10px;
-  width: 140px;
+  width: 300px;
 }
 
 .title-section {
@@ -318,15 +323,16 @@ Fábrica
 }
 
 .title-section img {
-  width: 5px;
+  width: 20px;
 }
 
 .title-section h2 {
-  font-size: 0.5rem;
+  font-size: 2rem;
+  text-wrap: nowrap;
 }
 
 .text-section p {
-  font-size: 0.3rem;
+  font-size: 1rem;
   text-align: center;
 }
 
@@ -340,7 +346,7 @@ Nossas obras
 
 #obras {
   font-family: Michroma;
-  font-size: 0.5rem;
+  font-size: 1rem;
 
   padding-left: 3%;
   padding-right: 3%;
@@ -358,7 +364,7 @@ Nossas obras
 
 .section-obras img {
   padding: 3%;
-  width: 150px;
+  width: 200px; /* Increase project image sizes */
 }
 
 .section-obras img:hover {
@@ -393,7 +399,7 @@ Nossas obras
 }
 
 .customers-row img {
-  width: 70px;
+  width: 100px; /* Increase customer logo sizes */
   padding: 2%;
 }
 
@@ -407,7 +413,7 @@ Nossas obras
   background-repeat: no-repeat;
 
   font-family: Michroma;
-  font-size: 0.5rem;
+  font-size: 1.5rem; /* Increase location section title size */
   color: white;
 
   width: 100vw;
@@ -456,7 +462,7 @@ Nossas obras
   margin-bottom: 5%;
   width: 80vw;
 
-  font-size: 0.3rem;
+  font-size: 1rem; /* Increase location info text size */
   text-align: center;
 
   border: 1px solid #973c2c;
@@ -470,7 +476,7 @@ Nossas obras
 
 .info-projetos h2,
 .info-fabrica h2 {
-  font-size: 0.5rem;
+  font-size: 1.2rem; /* Increase location info titles */
   color: #973c2c;
 }
 
@@ -500,7 +506,7 @@ iframe {
   background-color: #ffffff;
   color: black;
   font-family: "Poppins", sans-serif;
-  font-size: 0.3rem;
+  font-size: 1rem; /* Increase footer text size */
 
   gap: 20px;
 }
@@ -508,6 +514,7 @@ iframe {
 #footer h3 {
   color: #973c2c;
   margin-bottom: 10px;
+  font-size: 1.2rem; /* Increase footer section titles */
 }
 
 #footer ul {
@@ -522,7 +529,7 @@ iframe {
 #footer ul li a {
   text-decoration: none;
   color: black;
-  font-size: 0.4rem;
+  font-size: 1rem; /* Increase footer link size */
   transition: color 0.3s;
 }
 
@@ -549,10 +556,93 @@ iframe {
   align-items: center;
 }
 .footer-logo img {
-  width: 70px;
+  width: 100px; /* Increase footer logo size */
   margin-bottom: 10px;
 }
 
 .footer-logo p {
   text-wrap: nowrap;
+  font-size: 1rem; /* Increase footer copyright text size */
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  body {
+    font-size: 1rem; /* Adjust base font size for mobile */
+  }
+
+  #head {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .menu ul li {
+    font-size: 0.9rem; /* Adjust menu font size for mobile */
+  }
+
+  .number {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #hero {
+    height: auto;
+    padding: 10%;
+    text-align: center;
+  }
+
+  #hero h1 {
+    font-size: 2rem; /* Adjust hero title size for mobile */
+  }
+
+  #about-us .quem-somos,
+  #about-us .solucoes {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #about-us h2,
+  .solucoes h2 {
+    font-size: 1.2rem; /* Adjust section titles for mobile */
+  }
+
+  .main-fabrica {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .section-obras {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .customers-row {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .info-projetos h2,
+  .info-fabrica h2 {
+    font-size: 1rem; /* Adjust location info titles for mobile */
+  }
+
+  #footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    font-size: 0.9rem; /* Adjust footer text size for mobile */
+  }
+
+  .footer-links,
+  .footer-contact,
+  .footer-location {
+    width: 100%;
+  }
 }
