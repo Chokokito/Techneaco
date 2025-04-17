@@ -124,12 +124,18 @@ h6 {
 .menu ul li a {
   text-decoration: none;
   color: black;
+  transition: 1s;
 }
 .menu ul li a:link {
   color: black;
 }
 .menu ul li a:visited {
   color: black;
+}
+
+.menu ul li a:hover {
+  color: #973c2c;
+  text-decoration: underline;
 }
 
 .smartphone-menu {
@@ -401,6 +407,7 @@ Nossas obras
   background-repeat: no-repeat;
 
   font-family: Michroma;
+  font-size: 0.5rem;
   color: white;
 
   width: 100vw;
@@ -422,7 +429,8 @@ Nossas obras
   font-family: Michroma;
 }
 
-.projetos {
+.projetos,
+.fabrica {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -433,7 +441,8 @@ Nossas obras
   width: 80vw;
 }
 
-.info-projetos {
+.info-projetos,
+.info-fabrica {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -453,12 +462,97 @@ Nossas obras
   border: 1px solid #973c2c;
 }
 
-.info-projetos img {
+.info-projetos img,
+.info-fabrica img {
   width: 20px;
   padding: 3%;
 }
 
-.info-projetos h2 {
+.info-projetos h2,
+.info-fabrica h2 {
   font-size: 0.5rem;
   color: #973c2c;
+}
+
+iframe {
+  pointer-events: auto; /* Allow interaction with the map */
+  font-size: 10%; /* Ensure proper font scaling */
+}
+
+.fixo,
+.wpp-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fixo img,
+.wpp-cell img {
+  width: 15px;
+  padding: 3%;
+}
+
+#footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #ffffff;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.3rem;
+
+  gap: 20px;
+}
+
+#footer h3 {
+  color: #973c2c;
+  margin-bottom: 10px;
+}
+
+#footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+#footer ul li {
+  margin-bottom: 5px;
+}
+
+#footer ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.4rem;
+  transition: color 0.3s;
+}
+
+#footer ul li a:hover {
+  color: #973c2c;
+}
+
+.footer-links,
+.footer-contact,
+.footer-location {
+  width: 30%;
+}
+
+.footer-contact p,
+.footer-location p {
+  margin: 5px 0;
+  line-height: 1.4;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-logo img {
+  width: 70px;
+  margin-bottom: 10px;
+}
+
+.footer-logo p {
+  text-wrap: nowrap;
 }
