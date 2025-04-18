@@ -10,6 +10,7 @@
 /* 2. Remove default margin */
 * {
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -18,6 +19,7 @@ body {
   /* 4. Improve text rendering */
   -webkit-font-smoothing: antialiased;
   font-size: 1.2rem; /* Increase base font size */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* 5. Improve media defaults */
@@ -244,11 +246,6 @@ Hero
   font-size: 1rem; /* Increase paragraph text size */
 }
 
-.img-about,
-.img-solucoes {
-  width: 500px; /* Increase image sizes */
-}
-
 .img-about img,
 .img-solucoes img {
   width: 500px; /* Increase image sizes */
@@ -364,7 +361,7 @@ Nossas obras
 
 .section-obras img {
   padding: 3%;
-  width: 200px; /* Increase project image sizes */
+  width: 400px; /* Increase project image sizes */
 }
 
 .section-obras img:hover {
@@ -387,7 +384,7 @@ Nossas obras
   font-family: Michroma;
   text-align: center;
 
-  font-size: 0.5rem;
+  font-size: 1rem;
 }
 
 .customers-row {
@@ -399,7 +396,7 @@ Nossas obras
 }
 
 .customers-row img {
-  width: 100px; /* Increase customer logo sizes */
+  width: 200px; /* Increase customer logo sizes */
   padding: 2%;
 }
 
@@ -454,13 +451,13 @@ Nossas obras
   justify-content: center;
   flex-direction: column;
 
-  width: 130px !important;
+  width: 300px !important;
   padding: 5%;
 
   gap: 3px;
 
   margin-bottom: 5%;
-  width: 80vw;
+  width: 800vw;
 
   font-size: 1rem; /* Increase location info text size */
   text-align: center;
@@ -470,7 +467,7 @@ Nossas obras
 
 .info-projetos img,
 .info-fabrica img {
-  width: 20px;
+  width: 50px;
   padding: 3%;
 }
 
@@ -478,11 +475,6 @@ Nossas obras
 .info-fabrica h2 {
   font-size: 1.2rem; /* Increase location info titles */
   color: #973c2c;
-}
-
-iframe {
-  pointer-events: auto; /* Allow interaction with the map */
-  font-size: 10%; /* Ensure proper font scaling */
 }
 
 .fixo,
@@ -569,12 +561,14 @@ iframe {
 @media (max-width: 768px) {
   body {
     font-size: 1rem; /* Adjust base font size for mobile */
+    overflow-x: hidden; /* Ensure no horizontal scrolling */
   }
 
   #head {
     flex-direction: column;
+    display: none;
     align-items: flex-start;
-    padding: 15px;
+    padding: 10px;
   }
 
   .menu ul {
@@ -592,24 +586,57 @@ iframe {
   }
 
   #hero {
-    height: auto;
-    padding: 10%;
+    height: 100vh;
     text-align: center;
+    width: 100vw;
+  }
+  .descubra {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .descubra img {
+    width: 100px;
   }
 
   #hero h1 {
-    font-size: 2rem; /* Adjust hero title size for mobile */
+    font-size: 1.6rem; /* Adjust hero title size for mobile */
   }
 
+  #hero p {
+    font-size: 0.7rem; /* Adjust hero subtitle size for mobile */
+  }
+
+  #about-us {
+    width: 100vw;
+    padding: 3%;
+  }
+
+  #about-us .quem-somos {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text-about {
+    width: 100%;
+  }
+
+  .text-about p {
+    font-size: 1rem; /* Adjust paragraph text size for mobile */
+  }
   #about-us .quem-somos,
   #about-us .solucoes {
     flex-direction: column;
     gap: 20px;
+    text-align: center; /* Center-align text for better readability */
+    max-width: 100%; /* Ensure content fits within the screen */
   }
 
-  #about-us h2,
-  .solucoes h2 {
-    font-size: 1.2rem; /* Adjust section titles for mobile */
+  .text-about,
+  .text-solucoes {
+    width: 90%; /* Ensure content fits within the screen */
+    max-width: 100%; /* Prevent overflow */
   }
 
   .main-fabrica {
@@ -622,14 +649,46 @@ iframe {
     gap: 10px;
   }
 
-  .customers-row {
-    flex-wrap: wrap;
+  .title-section h2 {
+    text-wrap: wrap;
+  }
+
+  .section-obras img {
+    width: 100%; /* Scale images to fit within the screen */
+    max-width: 400px; /* Maintain a reasonable maximum size */
+  }
+
+  .customers {
+    display: flex;
     gap: 10px;
+  }
+  .customers-row {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .customers-row img {
+    width: 100%; /* Scale customer logos */
+    width: 60px; /* Maintain a reasonable maximum size */
+    height: auto;
+  }
+
+  .info-projetos,
+  .info-fabrica {
+    width: 90%; /* Ensure location info fits within the screen */
+    max-width: 100%; /* Prevent overflow */
   }
 
   .info-projetos h2,
   .info-fabrica h2 {
     font-size: 1rem; /* Adjust location info titles for mobile */
+  }
+
+  .head-location h1 {
+    font-size: 0.9rem;
   }
 
   #footer {
@@ -638,11 +697,34 @@ iframe {
     text-align: center;
     gap: 20px;
     font-size: 0.9rem; /* Adjust footer text size for mobile */
+    max-width: 100%; /* Prevent footer overflow */
   }
 
   .footer-links,
   .footer-contact,
   .footer-location {
     width: 100%;
+    max-width: 100%; /* Prevent overflow */
+  }
+
+  .footer-logo p {
+    text-wrap: wrap;
+  }
+
+  .footer-location {
+    display: none;
+  }
+
+  .projetos,
+  .fabrica {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%; /* Prevent overflow */
+  }
+
+  .gps iframe {
+    width: 400px;
+    height: 300px;
   }
 }
