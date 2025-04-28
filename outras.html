@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <h1>Outras Estruturas</h1>
+      <div id="galeria">
+        <img src="https://placehold.co/600x400" alt="" />
+        <img src="https://placehold.co/600x400" alt="" />
+        <img src="https://placehold.co/600x400" alt="" />
+      </div>
+    </main>
+  </body>
+  <script>
+    let logo = document.querySelector(".logo img");
+    logo.addEventListener("click", () => {
+      window.location.href = "/index.html";
+    });
+    // Lista com o nome dos arquivos que você colocar na pasta
+    const imagens = [
+      // só adicionar o nome aqui quando colocar uma imagem nova
+    ];
+
+    // Pegando a div onde as imagens vão aparecer
+    const galeria = document.getElementById("galeria");
+
+    // Para cada imagem, cria um <img> e coloca na galeria
+    imagens.forEach((nomeArquivo) => {
+      const img = document.createElement("img");
+      img.src = `/imagens/${nomeArquivo}`; // caminho da imagem
+      img.alt = nomeArquivo; // texto alternativo (opcional)
+      img.style.width = "200px"; // exemplo de estilo direto
+      img.style.margin = "10px";
+      galeria.appendChild(img);
+    });
+  </script>
+</html>
